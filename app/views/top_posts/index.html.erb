@@ -1,0 +1,31 @@
+<h1>Listing top_posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Subpostscount</th>
+      <th>Subpostsscore</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @top_posts.each do |top_post| %>
+      <tr>
+        <td><%= top_post.post %></td>
+        <td><%= top_post.subPostsCount %></td>
+        <td><%= top_post.subPostsScore %></td>
+        <td><%= link_to 'Show', top_post %></td>
+        <td><%= link_to 'Edit', edit_top_post_path(top_post) %></td>
+        <td><%= link_to 'Destroy', top_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Top post', new_top_post_path %>

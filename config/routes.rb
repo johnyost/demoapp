@@ -1,4 +1,6 @@
 MyApp::Application.routes.draw do
+  resources :top_posts
+
   resources :microposts
 
   resources :users

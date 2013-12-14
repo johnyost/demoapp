@@ -1,0 +1,29 @@
+<%= form_for(@top_post) do |f| %>
+  <% if @top_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@top_post.errors.count, "error") %> prohibited this top_post from being saved:</h2>
+
+      <ul>
+      <% @top_post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :post %><br>
+    <%= f.text_field :post %>
+  </div>
+  <div class="field">
+    <%= f.label :subPostsCount %><br>
+    <%= f.number_field :subPostsCount %>
+  </div>
+  <div class="field">
+    <%= f.label :subPostsScore %><br>
+    <%= f.number_field :subPostsScore %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

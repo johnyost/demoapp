@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @top_post.post %>
+</p>
+
+<p>
+  <strong>Subpostscount:</strong>
+  <%= @top_post.subPostsCount %>
+</p>
+
+<p>
+  <strong>Subpostsscore:</strong>
+  <%= @top_post.subPostsScore %>
+</p>
+
+<%= link_to 'Edit', edit_top_post_path(@top_post) %> |
+<%= link_to 'Back', top_posts_path %>

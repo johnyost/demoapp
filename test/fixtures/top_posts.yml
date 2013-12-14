@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post: MyString
+  subPostsCount: 1
+  subPostsScore: 1
+
+two:
+  post: MyString
+  subPostsCount: 1
+  subPostsScore: 1
