@@ -2,10 +2,8 @@
 
 one:
   post: MyString
-  subPostsCount: 1
-  subPostsScore: 1
+  micropost_id: 1
 
 two:
   post: MyString
-  subPostsCount: 1
-  subPostsScore: 1
+  micropost_id: 1
